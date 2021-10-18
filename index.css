@@ -1,0 +1,176 @@
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    background: cornflowerblue;
+    justify-content: space-around;
+    align-items: center;
+    border: solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#titulo{
+    width: 500px;
+    color: white;
+    animation:mianimacion 5s ease-in-out 3 normal;
+}
+@keyframes mianimacion{
+    from{
+        background: indigo;
+        width: 200px;
+    }
+    50%{
+        background: brown;
+        width: 150px;
+    }
+    to{
+        background: orange;
+        width: 300px ;
+    }
+}
+
+#fotito{
+    clip-path: circle(50%);
+    height: 50px;
+    width: 50px;
+    opacity: 60%;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+footer ul a{
+    text-decoration: none;
+    color: black;
+
+}
+nav li{
+    list-style: none;
+}
+nav{
+ height: 100%;
+ background-color:white;
+ display: grid; 
+ gap: 10px;
+ border: solid;
+ }
+
+ main section{
+     border: solid;
+ }
+
+ h3{
+     display: flex;
+     justify-content: center;
+ }
+ @media screen and (min-width:480px ) {
+ 
+    nav ul{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ul a {
+        border-right: solid white;
+    }
+    main{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top:5px;
+        font-family:'Courier New', Courier, monospace;
+        gap: 10px;
+     }
+    #Cerrar{
+        display: none;
+    }
+    #burger-icon{
+        display: none;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        border:solid;
+        }
+}
+@media screen and (max-width:480px ){
+   #cerrarbusqueda{
+       display: none;
+   }
+   figure{
+    display: none;
+   }
+   form label{
+    display: inline-block;   
+    width: 250px;
+  }
+  nav{
+  background-color: slategrey;
+}
+nav a{
+color: white;
+}
+footer{
+    display: block;
+    justify-content:space-between;
+    border:solid;
+    padding-left:60px;   
+    }
+#boton{
+display: block;
+height: 30px;
+width: 75px;
+font-size:15px;
+border: solid black;
+margin-top: 5px;
+  }
+ }
+
+#Nombre{
+    width:200px;
+}
+#TextBuscar{
+    width: 250px;
+}
+footer ul a:focus{
+    background: green;
+}
+#boton{
+    margin-inline: 70px;
+    margin-bottom: 5px;
+    align-items: center;
+    border: solid goldenrod;
+
+      }
+button{
+background-color: grey;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border: rgb(77, 74, 74);
+width: 50px;
+height: auto;
+}
+
+button:hover{
+    background-color: rgb(224, 233, 211);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    transition:all 500ms;
+
+}
